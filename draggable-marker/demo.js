@@ -84,6 +84,6 @@ var ui = H.ui.UI.createDefault(map, defaultLayers, 'en-US');
 addDraggableMarker(map, behavior);
 
 //Output position
-google.maps.event.addlistener(marker 'dragend' function(){
+google.maps.event.addListener(marker, 'dragend', function(){
 console.log(marker.getPosition());
 });
